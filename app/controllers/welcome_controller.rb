@@ -5,7 +5,6 @@ class WelcomeController < ApplicationController
     
    @states.sort!
 
-
     	if params[:city] != nil
        	params[:city].gsub! " ", "_"
     	end
@@ -37,5 +36,4 @@ end
   @forecast_link = response['current_observation']['forecast_url']
   @real_feel = response['current_observation']['feelslike_f']
   end
-
 end
