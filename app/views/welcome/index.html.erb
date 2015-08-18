@@ -1,5 +1,7 @@
 <%= render 'form' %>
 
+<% if @location != nil %>
+
 <div class = "row">
     <div class = "col-md-6 col-md-offset-3">
         <div class = "well">
@@ -26,3 +28,8 @@
         </div>
     </div>    
 </div>
+
+<br><br><br>
+<h1 class="animated bounceInRight">
+<iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aspotify%3Aplaylist%3A<%= playlist(@temp_f) %>" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></h1>
+<% end %>
